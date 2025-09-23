@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
 
-
+<div className='overflow-x-hidden'>
       <Navbar />
       <FullScreenNav />
     <Routes>
@@ -20,6 +20,7 @@ const App = () => {
       <Route path='/Agence' element= {<Agence />} />
       <Route path='/Projects' element= {<Projects />} />
     </Routes>
+    </div>  
     </>
   )
 }

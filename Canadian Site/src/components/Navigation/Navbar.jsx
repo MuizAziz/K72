@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <div className="flex fixed top-0 w-full items-start justify-between z-4">
         <div className="p-3">
-          <div className="w-30">
+          <div className="w-16 lg:w-30">
             <svg
               className="w-full"
               xmlns="http://www.w3.org/2000/svg"
@@ -40,11 +40,11 @@ const Navbar = () => {
             menuLine2Ref.current.style.backgroundColor = 'white'
         }
         }
-        className="h-16 w-[16vw] bg-black relative cursor-pointer">
+        className="h-10 lg:h-16 lg:w-[16vw] w-40 bg-black relative cursor-pointer">
           <div ref={navGreenRef} className="bg-[#D3FD50] transition-all absolute top-0 h-0 w-full"></div>
-          <div className="relative text-white py-[2vw] pl-[65%]">
-            <div ref={menuLine1Ref} className="bg-white w-[4vw] h-[1px] mb-2 transition-all"></div>
-            <div ref={menuLine2Ref} className="bg-white w-[2vw] h-[1.5px] ml-7 transition-all"></div>
+          <div className="relative px-12 h-full flex flex-col justify-center items-end gap-1.5">
+            <div ref={menuLine1Ref} className="lg:w-18 w-10 h-0.5 transition-all bg-white"></div>
+            <div ref={menuLine2Ref} className="lg:w-10 w-5  h-0.5 transition-all bg-white"></div>
           </div>
 
         </div>
